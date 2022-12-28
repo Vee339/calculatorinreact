@@ -1,0 +1,299 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    user-select:none;
+     
+    /*border:1px solid red; */
+}
+section{
+    width:100%;
+    min-height:740px;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-family: 'League Spartan', sans-serif;
+}
+.header, .result, .buttons{
+    width:400px;
+    border-radius: 8px;
+}
+.header{
+    height:40px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header .logo{
+    font-size:25px;
+    margin-left:10px;
+    font-weight:700;
+    text-transform:lowercase;
+}
+.header .theme{
+    display:flex;
+    font-weight:normal;
+    font-size:11px;
+}
+.header .theme p{
+    text-transform:uppercase;
+    margin-right:25px;
+    line-height:60px;
+}
+.header .theme .changeTheme{
+    
+}
+.header .theme .changeTheme .nums{
+    padding:0 7px;
+  
+    margin-bottom:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header .theme .changeTheme .slider{
+    width:65px;
+    height:25px;
+    padding:5px;
+    border-radius:20px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+.header .theme .changeTheme .slider .toggleBtn{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background: hsl(6, 63%, 50%);
+
+}
+.result{
+    height:100px;
+    margin-bottom:20px;
+    padding:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.result input{
+    width:100%;
+    height:100%;
+    text-align: right;
+    border:none;
+    outline:none;
+    background: transparent;
+    font-size:45px;
+    font-weight:700;
+    font-family: 'League Spartan', sans-serif;
+
+}
+.buttons{
+    height:350px;
+    padding:25px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-gap:18px;
+}
+.buttons .button{
+    font-weight: 700;
+    font-size:28px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.buttons .button:hover{
+    
+}
+.buttons .button.reset{
+    grid-column:1/3;
+} 
+.buttons .button.reset:hover{
+     
+}
+.buttons .button.equal{
+    grid-column:3/5;
+}
+.buttons .button.equal:hover{
+   
+}
+.buttons .button.del{
+   
+}
+.buttons .button.del:hover{
+    
+}
+
+
+/* theme 1 */
+
+section.theme1{
+    background: hsl(222, 26%, 31%);;
+}
+section.theme1 .header{
+    color:#ffffff;
+}
+section.theme1 .header .theme .changeTheme .slider{
+    background: hsl(223, 31%, 20%);
+    justify-content:flex-start;
+}
+section.theme1 .result{
+    background: hsl(224, 36%, 15%);
+}
+section.theme1 .result input{
+    color:#ffffff;
+}
+section.theme1 .buttons{
+    background: hsl(223, 31%, 20%);
+}
+section.theme1 .buttons .button{
+    background: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow:0 3px hsl(28, 16%, 65%);
+}
+section.theme1 .buttons .button:hover{
+    background: hsl(60, 11%, 98%);
+}
+section.theme1 .buttons .button.reset{
+    background:  hsl(225, 21%, 49%);
+    color:#ffffff;
+    box-shadow:0 3px hsl(224, 28%, 35%);
+} 
+section.theme1 .buttons .button.reset:hover{
+    background:  hsl(226, 14%, 53%);
+}
+section.theme1 .buttons .button.equal{
+    background: hsl(6, 63%, 50%);
+    color:#ffffff;
+    box-shadow:0 3px hsl(6, 70%, 34%);
+}
+section.theme1 .buttons .button.equal:hover{
+    background: hsl(6, 59%, 55%);
+}
+section.theme1 .buttons .button.del{
+    background:  hsl(225, 21%, 49%);
+    color:#ffffff;
+    box-shadow:0 3px hsl(224, 28%, 35%);
+}
+section.theme1 .buttons .button.del:hover{
+    background:  hsl(226, 14%, 53%);
+}
+
+
+/* theme 2 */
+
+section.theme2{
+    background: hsl(0, 0%, 90%);
+}
+section.theme2 .header{
+    color: hsl(60, 10%, 19%);
+}
+section.theme2 .header .theme .changeTheme .slider{
+    background: hsl(0, 5%, 81%);
+    justify-content:center;
+}
+section.theme2 .result{
+    background: hsl(0, 0%, 93%);
+}
+section.theme2 .result input{
+    color:hsl(60, 10%, 19%);
+}
+section.theme2 .buttons{
+    background: hsl(0, 5%, 81%);
+}
+section.theme2 .buttons .button{
+    background: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    box-shadow:0 3px hsl(35, 11%, 61%);
+}
+section.theme2 .buttons .button:hover{
+    background: hsl(60, 11%, 98%);
+}
+section.theme2 .buttons .button.reset{
+    background:  hsl(185, 42%, 37%);
+    color:#ffffff;
+    box-shadow:0 3px hsl(185, 58%, 25%);
+} 
+section.theme2 .buttons .button.reset:hover{
+     background:  hsl(185, 30%, 39%);
+}
+section.theme2 .buttons .button.equal{
+    background: hsl(25, 98%, 40%);
+    color:#ffffff;
+    box-shadow:0 3px hsl(25, 99%, 27%);
+}
+section.theme2 .buttons .button.equal:hover{
+    background: hsl(25, 67%, 46%);
+}
+section.theme2 .buttons .button.del{
+    background:  hsl(185, 42%, 37%);
+    color:#ffffff;
+    box-shadow:0 3px hsl(185, 58%, 25%);
+}
+section.theme2 .buttons .button.del:hover{
+    background:  hsl(185, 30%, 39%);
+}
+
+/* theme 3 */
+
+section.theme3{
+    background: hsl(268, 75%, 9%);
+}
+section.theme3 .header{
+    color: hsl(52, 100%, 62%);
+}
+section.theme3 .header .theme .changeTheme .slider{
+    background: hsl(268, 71%, 12%);
+    justify-content:flex-end;
+}
+section.theme3 .header .theme .changeTheme .slider .toggleBtn{
+    background:  hsl(176, 100%, 44%);
+}
+section.theme3 .result{
+    background: hsl(268, 71%, 12%);
+}
+section.theme3 .result input{
+    color:hsl(52, 100%, 62%);
+}
+section.theme3 .buttons{
+    background: hsl(268, 71%, 12%);
+}
+section.theme3 .buttons .button{
+    background: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow:0 3px hsl(290, 70%, 36%);
+}
+section.theme3 .buttons .button:hover{
+    background: hsl(268, 48%, 39%);
+}
+section.theme3 .buttons .button.reset{
+    background:  hsl(281, 89%, 26%);
+    color:#ffffff;
+    box-shadow:0 3px hsl(285, 91%, 52%);
+} 
+section.theme3 .buttons .button.reset:hover{
+     background:  hsl(281, 74%, 34%);
+}
+section.theme3 .buttons .button.equal{
+    background: hsl(176, 100%, 44%);
+    color:hsl(198, 20%, 13%);
+    box-shadow:0 3px hsl(177, 92%, 70%);
+}
+section.theme3 .buttons .button.equal:hover{
+    background: hsl(176, 67%, 54%);
+}
+section.theme3 .buttons .button.del{
+    background:  hsl(281, 89%, 26%);
+    color:#ffffff;
+    box-shadow:0 3px hsl(285, 91%, 52%);
+}
+section.theme3 .buttons .button.del:hover{
+    background:  hsl(281, 74%, 34%);
+}
